@@ -1,6 +1,6 @@
 {
   "name": "ts-starter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Henry Aguila",
   "files": [
     "build"
@@ -11,15 +11,17 @@
   "scripts": {
     "ts": "tsx",
     "test": "vitest --dir=test run",
-    "build": "shx rm -rf build && tsup src/main.ts -d=build --dts --format=esm"
+    "build": "shx rm -rf build && tsup src/main.ts -d=build --dts --format=esm",
+    "update:check": "npx npm-check-updates",
+    "update": "npx npm-check-updates -u && npm i"
   },
   "devDependencies": {
-    "@types/node": "^20.12.3",
-    "prettier": "^3.2.5",
+    "@types/node": "^22.13.5",
+    "prettier": "^3.5.2",
     "shx": "^0.3.4",
-    "tsup": "^8.0.2",
-    "tsx": "^4.7.2",
-    "typescript": "^5.4.3",
-    "vitest": "^1.4.0"
+    "tsup": "^8.4.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.7"
   }
 }
