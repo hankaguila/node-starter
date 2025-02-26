@@ -1,4 +1,17 @@
 {
+  "printWidth": 100,
   "trailingComma": "none",
-  "vueIndentScriptAndStyle": true
+  "vueIndentScriptAndStyle": true,
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "<TYPES>^(node:)",
+    "<TYPES>",
+    "<TYPES>^[$]",
+    "<TYPES>^[.]",
+    "<BUILTIN_MODULES>",
+    "<THIRD_PARTY_MODULES>",
+    "^[$]",
+    "^[.]"
+  ],
+  "importOrderCaseSensitive": true
 }
