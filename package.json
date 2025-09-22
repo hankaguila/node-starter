@@ -1,6 +1,6 @@
 {
-  "name": "ts-starter",
-  "version": "0.2.1",
+  "name": "node-starter",
+  "version": "0.3.0",
   "author": "Henry Aguila",
   "files": [
     "build"
@@ -9,20 +9,20 @@
   "types": "build/main.d.ts",
   "type": "module",
   "scripts": {
-    "ts": "tsx",
+    "exec": "tsx",
     "test": "vitest --dir=test run",
     "build": "shx rm -rf build && tsup src/main.ts -d=build --dts --format=esm",
-    "update:check": "npx npm-check-updates",
-    "update": "npx npm-check-updates -u && npm i"
+    "deps:check": "npx npm-check-updates",
+    "deps:update": "npx npm-check-updates -u && npm i"
   },
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
-    "@types/node": "^22.13.5",
-    "prettier": "^3.5.2",
-    "shx": "^0.3.4",
-    "tsup": "^8.4.0",
-    "tsx": "^4.19.3",
-    "typescript": "^5.7.3",
-    "vitest": "^3.0.7"
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+    "@types/node": "^24.5.2",
+    "prettier": "^3.6.2",
+    "shx": "^0.4.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }

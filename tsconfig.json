@@ -1,33 +1,27 @@
 // https://www.typescriptlang.org/tsconfig
 {
   "compilerOptions": {
-    // Type Checking
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
+    // Runtime
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "types": ["node"],
 
     // Modules
-    "module": "nodenext",
+    "module": "NodeNext",
+    "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
+    "moduleDetection": "force",
 
-    // Emit
-    "outDir": "build",
-    "sourceMap": true,
-
-    // JavaScript Support
-    "allowJs": true,
-    "checkJs": true,
-
-    // Interop Constraints
+    // Safety
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
     "isolatedModules": true,
 
-    // Language & Environment
-    "moduleDetection": "force",
-    "target": "esnext",
-
-    // Completeness
+    // Build
+    "noEmit": true,
     "skipLibCheck": true
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

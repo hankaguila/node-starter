@@ -1,5 +1,5 @@
-import { packageMeta } from "./config.js";
-import greet from "./lib/greet.js";
+import { appName, appVersion, rootDir } from "./config.js";
+import greet from "./greet.js";
 
-console.dir(packageMeta, { depth: null });
+console.log({ rootDir, appName, appVersion });
 greet();

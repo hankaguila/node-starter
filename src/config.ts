@@ -1,14 +1,11 @@
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { getJsonPropertyValue, toPosix } from "./lib/utils/index.js";
+import pkg from "../package.json" with { type: "json" };
+import { toPosix } from "./utils/index.js";
 
-const baseDir = toPosix(
-  process.env.INIT_CWD || join(dirname(fileURLToPath(import.meta.url)), "..")
+export const rootDir = toPosix(
+  process.env.INIT_CWD ?? join(dirname(fileURLToPath(new URL(".", import.meta.url))), "..")
 );
-const packageJsonPath = `${baseDir}/package.json`;
 
-export const packageMeta = {
-  baseDir,
-  name: await getJsonPropertyValue(packageJsonPath, "name"),
-  version: await getJsonPropertyValue(packageJsonPath, "version")
-};
+export const appName = pkg.name as string;
+export const appVersion = pkg.version as string;

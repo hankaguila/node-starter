@@ -1,6 +1,6 @@
-# ts-starter
+# node-starter
 
-A typescript starter
+A barebones node project starter
 
 ## Contents
 
@@ -18,7 +18,7 @@ A typescript starter
 ## Usage
 
 ```sh
-npx degit hankaguila/ts-starter
+npx degit hankaguila/node-starter
 ```
 
 ## License
