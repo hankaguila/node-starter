@@ -1,6 +1,6 @@
 # node-starter
 
-A barebones node project starter
+A barebones node project
 
 ## Contents
 
@@ -11,9 +11,9 @@ A barebones node project starter
 ## Features
 
 - No linter, just `prettier`
-- Compiles with `tsup`
-- Runs typescript with `esrun`
+- Executes with `tsx`
 - Tests with `vitest`
+- Compiles with `tsup`
 
 ## Usage
 
