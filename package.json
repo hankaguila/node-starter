@@ -11,7 +11,7 @@
   "scripts": {
     "exec": "tsx",
     "test": "vitest --dir=test run",
-    "build": "tsup src/main.ts --clean -d=build --dts --format=esm --platform=node --splitting=false --target=node20",
+    "build": "tsup src/main.ts --clean -d=build --dts --format=esm --platform=node --sourcemap --target=node20",
     "deps:check": "npx npm-check-updates",
     "deps:update": "npx npm-check-updates -u && npm i"
   },
