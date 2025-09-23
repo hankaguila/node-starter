@@ -1,5 +1,5 @@
 import { beforeAll, afterAll, describe, it, vi, expect } from "vitest";
-import greet from "../src/greet.js";
+import greet from "../src/greet";
 
 beforeAll(() => {
   vi.spyOn(console, "log");

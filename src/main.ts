@@ -1,5 +1,5 @@
-import { appName, appVersion, rootDir } from "./config.js";
-import greet from "./greet.js";
+import { appName, appVersion, rootDir } from "./config";
+import greet from "./greet";
 
 console.log({ rootDir, appName, appVersion });
 greet();

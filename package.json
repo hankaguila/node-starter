@@ -1,7 +1,7 @@
 {
   "name": "node-starter",
-  "version": "0.3.0",
-  "author": "Henry Aguila",
+  "version": "0.3.1",
+  "author": "Hank Aguila",
   "files": [
     "build"
   ],
@@ -11,7 +11,7 @@
   "scripts": {
     "exec": "tsx",
     "test": "vitest --dir=test run",
-    "build": "shx rm -rf build && tsup src/main.ts -d=build --dts --format=esm",
+    "build": "tsup src/main.ts --clean -d=build --dts --format=esm --platform=node --splitting=false --target=node20",
     "deps:check": "npx npm-check-updates",
     "deps:update": "npx npm-check-updates -u && npm i"
   },
@@ -19,7 +19,6 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@types/node": "^24.5.2",
     "prettier": "^3.6.2",
-    "shx": "^0.4.0",
     "tsup": "^8.5.0",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2",

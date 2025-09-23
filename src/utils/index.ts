@@ -1,1 +1,1 @@
-export { toPosix } from "./toPosix.js";
+export { toPosix } from "./toPosix";
