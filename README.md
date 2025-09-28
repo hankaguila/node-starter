@@ -18,7 +18,7 @@ A node starter project
 ## Usage
 
 ```sh
-npx degit hankaguila/node-starter
+npx degit --force hankaguila/node-starter
 ```
 
 ## License
