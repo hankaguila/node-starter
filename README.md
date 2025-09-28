@@ -1,6 +1,6 @@
 # node-starter
 
-A barebones node project
+A node starter project
 
 ## Contents
 
